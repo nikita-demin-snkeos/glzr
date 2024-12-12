@@ -1,0 +1,13 @@
+[2m2024-10-04T14:30:19.361869Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general: missing field `cursor_jump` at line 3 column 3
+[2m2024-10-04T14:30:37.802350Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m general: missing field `cursor_jump` at line 3 column 3
+[2m2024-10-04T14:47:58.575775Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0]: missing field `commands` at line 172 column 9
+[2m2024-10-04T14:48:07.547936Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0]: missing field `commands` at line 172 column 9
+[2m2024-10-04T14:48:38.384834Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0].commands: invalid type: string "move left", expected a sequence at line 172 column 19
+[2m2024-10-04T14:49:26.895641Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0].commands: invalid type: string "move --direction left", expected a sequence at line 172 column 19
+[2m2024-10-04T15:21:52.236526Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0].commands: invalid type: string "move left", expected a sequence at line 174 column 19
+[2m2024-10-04T15:22:41.320356Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m binding_modes[1].keybindings[0].commands: invalid type: string "move --direction left", expected a sequence at line 174 column 19
+[2m2024-10-07T09:56:44.896730Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'gat-gwm.exe'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-07T09:57:09.722151Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'gat-gwm.exe'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-07T10:00:17.873963Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'C:\\Users\\nikita.demin\\.local\\bin\\gat-gwm.exe'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-14T07:36:59.127521Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'msedge'.\n\nError: The operation was canceled by the user. (0x800704C7)"
+[2m2024-10-15T10:53:22.136305Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1].match[1]: data did not match any variant of untagged enum MatchType at line 147 column 9
