@@ -115,6 +115,11 @@
           }
         }
 
+        function getMediaIcon(mediaOutput) {
+          const className = mediaOutput.isPlaying ? "play" : "pause";
+          return <i className={`nf nf-fa-${className}`}></i>;
+        }
+
         return (
           <div className="app">
             <div className="left">
@@ -137,17 +142,20 @@
                   ))}
                 </div>
               )}
-              {output.media && output.media.currentSession && (
-                <div className="media">
-                  <i className="nf nf-md-play_arrow"></i>
-                  {output.media.currentSession.title}
-                </div>
-              )}
             </div>
 
             <div className="center">{output.date?.formatted}</div>
 
             <div className="right">
+              {output.media && output.media.currentSession && (
+                <div className="media">
+                  {getMediaIcon(output.media.currentSession)}
+                  {output.media.currentSession.artist}
+                  {" - "}
+                  {output.media.currentSession.title}
+                </div>
+              )}
+
               {output.glazewm && (
                 <>
                   {output.glazewm.bindingModes.map((bindingMode) => (
