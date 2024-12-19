@@ -158,6 +158,10 @@ window_rules:
       - window_process: { regex: 'TrGUI|TrGUI\.exe' }
         window_class: { regex: 'Qt51510QWindowIcon' }
 
+      - window_process: { regex: 'msedge' }
+        window_class: { regex: 'Chrome_WidgetWin_1' }
+        window_title: { regex: 'Bitwarden' }
+
       - window_process: { regex: 'Taskmgr|regedit' }
       - window_process: { regex: 'explorer|explorer\.exe' }
       - window_process: { regex: 'PSRClient' }

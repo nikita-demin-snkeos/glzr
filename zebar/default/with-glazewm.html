@@ -142,11 +142,7 @@
                   ))}
                 </div>
               )}
-            </div>
 
-            <div className="center">{output.date?.formatted}</div>
-
-            <div className="right">
               {output.media && output.media.currentSession && (
                 <div className="media">
                   {getMediaIcon(output.media.currentSession)}
@@ -155,7 +151,11 @@
                   {output.media.currentSession.title}
                 </div>
               )}
+            </div>
 
+            <div className="center">{output.date?.formatted}</div>
+
+            <div className="right">
               {output.glazewm && (
                 <>
                   {output.glazewm.bindingModes.map((bindingMode) => (
