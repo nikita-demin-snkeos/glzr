@@ -67,6 +67,9 @@ window_effects:
 
   # Visual effects to apply to non-focused windows.
   other_windows:
+    transparency:
+      enabled: true
+      opacity: '85%'
     border:
       enabled: true
       color: '#aaaaaa'
