@@ -40,9 +40,9 @@ gaps:
   # Gap between windows and the screen edge.
   outer_gap:
     top: '40px'
-    right: '6px'
-    bottom: '6px'
-    left: '6px'
+    right: '4px'
+    bottom: '4px'
+    left: '4px'
 
 window_effects:
   # Visual effects to apply to the focused window.
@@ -51,7 +51,7 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: '#0000cc'
+      color: '#0000FF'
 
     # Remove the title bar from the window's frame.
     # ** Exclusive to Windows 11 due to API limitations.
@@ -68,11 +68,11 @@ window_effects:
   # Visual effects to apply to non-focused windows.
   other_windows:
     transparency:
-      enabled: true
-      opacity: '85%'
+      enabled: false
+      # opacity: '95%'
     border:
       enabled: true
-      color: '#aaaaaa'
+      color: '#FFFF88'
     hide_title_bar:
       enabled: true
     corner_style:
@@ -165,6 +165,10 @@ window_rules:
         window_class: { regex: 'Chrome_WidgetWin_1' }
         window_title: { regex: 'Bitwarden' }
 
+      - window_process: { regex: 'Microsoft\.CmdPal\.UI\.exe' }
+        window_class: { regex: 'WinUIDesktopWin32WindowClass' }
+        window_title: { regex: 'Command Palette' }
+
       - window_process: { regex: 'Taskmgr|regedit' }
       - window_process: { regex: 'explorer|explorer\.exe' }
       - window_process: { regex: 'PSRClient' }
@@ -179,7 +183,7 @@ window_rules:
       - window_process: { regex: 'LogiBolt|LogiTune|LogiOptionsUI' }
       - window_process: { regex: 'NohBoard' }
       - window_process: { regex: 'Paradox Launcher' }
-      # - window_process: { regex: 'PowerToys' }
+      - window_process: { regex: 'PowerToys' }
       - window_process: { regex: 'PowerToys\.ColorPickerUI|PowerToys\.ImageResizer' }
       - window_process: { regex: 'ProcessHacker' }
       - window_process: { regex: 'QuickLook' }
@@ -214,18 +218,15 @@ window_rules:
   - commands: ['move --workspace 1']
     match:
       - window_process: { regex: 'ms-teams|slack' }
-  - commands: ['move --workspace 2']
-    match:
-      - window_process: { regex: 'msedge|chrome|brave' }
-  - commands: ['move --workspace 3']
-    match:
-      - window_process: { regex: 'Code' }
-  - commands: ['move --workspace 4']
-    match:
-      - window_process: { regex: 'WindowsTerminal' }
-  - commands: ['move --workspace 9']
-    match:
-      - window_process: { regex: 'Яндекс Музыка' }
+  # - commands: ['move --workspace 2']
+  #   match:
+  #     - window_process: { regex: 'msedge|chrome' }
+  # - commands: ['move --workspace 3']
+  #   match:
+  #     - window_process: { regex: 'Code' }
+  # - commands: ['move --workspace 4']
+  #   match:
+  #     - window_process: { regex: 'WindowsTerminal|alacritty' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -351,10 +352,14 @@ keybindings:
   - commands: ['wm-redraw']
     bindings: ['alt+shift+w']
 
-  # Launch windows terminal (alternatively `exec %ProgramFiles%/Git/git-bash.exe`
-  # Git Bash.
-  - commands: ['shell-exec wt']
+  # Launch windows terminal (alternatively `shell-exec %ProgramFiles%/Git/git-bash.exe` Git Bash.)
+  # - commands: ['shell-exec wt']
+
+  - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q']
     bindings: ['alt+enter']
+
+  - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q -e ubuntu2204.exe']
+    bindings: ['ctrl+alt+enter']
 
   # Launch browser
   - commands: ['shell-exec msedge']

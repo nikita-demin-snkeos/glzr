@@ -11,3 +11,32 @@
 [2m2024-10-07T10:00:17.873963Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'C:\\Users\\nikita.demin\\.local\\bin\\gat-gwm.exe'.\n\nError: The operation was canceled by the user. (0x800704C7)"
 [2m2024-10-14T07:36:59.127521Z[0m [31mERROR[0m [2mglazewm::common::commands::shell_exec[0m[2m:[0m [3merr_message[0m[2m=[0m"Failed to execute 'msedge'.\n\nError: The operation was canceled by the user. (0x800704C7)"
 [2m2024-10-15T10:53:22.136305Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m window_rules[1].match[1]: data did not match any variant of untagged enum MatchType at line 147 column 9
+[2m2025-03-05T11:11:26.324225Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-05T11:41:39.385482Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-05T11:41:41.421236Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-03-21T12:01:23.884470Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-04-07T14:24:05.183021Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-04-24T10:59:58.059207Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-04-24T11:51:40.696782Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m channel closed
+[2m2025-05-08T15:00:19.285495Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-06-11T09:27:33.272232Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-06-12T08:12:36.755457Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-06-18T08:47:25.945175Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Access is denied. (0x80070005)
+[2m2025-07-17T13:38:14.818662Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-07-17T13:38:14.819279Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to send response: channel closed
+[2m2025-07-22T08:56:38.885150Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'alacritty.exe'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-07-22T08:56:45.740861Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'alacritty'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-07-22T08:58:20.372636Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'alacritty'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-07-22T08:58:40.290455Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m Failed to execute 'alacritty'.
+
+Error: The operation was canceled by the user. (0x800704C7)
+[2m2025-07-22T08:59:15.529411Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[23].commands: unrecognized subcommand
+ at line 361 column 15
+[2m2025-07-22T08:59:26.204188Z[0m [31mERROR[0m [2mglazewm[0m[2m:[0m keybindings[23].commands: unrecognized subcommand
+ at line 361 column 15

@@ -35,7 +35,7 @@
         cpu: { type: "cpu" },
         date: { type: "date", formatting: "EEE d MMM t", locale: "en-GB" },
         battery: { type: "battery" },
-        keyboard: { type: "keyboard" },
+        keyboard: { type: "keyboard", refreshInterval: 1000 },
         memory: { type: "memory" },
         weather: { type: "weather" },
         media: { type: "media" },
@@ -133,7 +133,7 @@
                       } ${workspace.isDisplayed && "displayed"}`}
                       onClick={() =>
                         output.glazewm.runCommand(
-                          `focus --workspace ${workspace.name}`
+                          `focus --workspace ${workspace.name}`,
                         )
                       }
                     >
