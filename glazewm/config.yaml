@@ -218,15 +218,15 @@ window_rules:
   - commands: ['move --workspace 1']
     match:
       - window_process: { regex: 'ms-teams|slack' }
-  # - commands: ['move --workspace 2']
-  #   match:
-  #     - window_process: { regex: 'msedge|chrome' }
-  # - commands: ['move --workspace 3']
-  #   match:
-  #     - window_process: { regex: 'Code' }
-  # - commands: ['move --workspace 4']
-  #   match:
-  #     - window_process: { regex: 'WindowsTerminal|alacritty' }
+  - commands: ['move --workspace 2']
+    match:
+      - window_process: { regex: 'msedge|chrome' }
+  - commands: ['move --workspace 3']
+    match:
+      - window_process: { regex: 'Code' }
+  - commands: ['move --workspace 4']
+    match:
+      - window_process: { regex: 'WindowsTerminal' }
 
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
@@ -352,13 +352,16 @@ keybindings:
   - commands: ['wm-redraw']
     bindings: ['alt+shift+w']
 
+  # - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q']
+  #   bindings: ['alt+enter']
+
+  # - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q -e ubuntu2204.exe']
+  #   bindings: ['ctrl+alt+enter']
+
   # Launch windows terminal (alternatively `shell-exec %ProgramFiles%/Git/git-bash.exe` Git Bash.)
-  # - commands: ['shell-exec wt']
-
-  - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q']
+  - commands: ['shell-exec wt']
     bindings: ['alt+enter']
-
-  - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q -e ubuntu2204.exe']
+  - commands: ['shell-exec %ProgramFiles%/Alacritty/alacritty.exe -q']
     bindings: ['ctrl+alt+enter']
 
   # Launch browser
